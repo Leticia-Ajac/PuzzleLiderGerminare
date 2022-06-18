@@ -7,6 +7,7 @@ import {
 import './App.css'
 
 import LevelUmPage from './Pages/Level1';
+import BeginningPage from './Pages/Beginning'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/level1' element={<LevelUmPage />}/>
+          <Route path='/' element={<BeginningPage />} />
         </Routes>
       </BrowserRouter>
     </div>
