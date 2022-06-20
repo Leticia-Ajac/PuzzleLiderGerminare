@@ -10,7 +10,7 @@ export default function BeginningPage(){
     const navegate = useNavigate()
 
     return (
-        <Borda corBorda='#fff' >
+        <Borda corBorda='#fff' color="#fff" justifyContent="center" >
         <div className="container">
             <div className="containerText" >
                 <div className="groupText">

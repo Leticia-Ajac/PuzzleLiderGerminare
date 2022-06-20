@@ -17,9 +17,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<BeginningPage />} />
-          <Route path='/firstVideo' element={<FirstVideoPage />}/>
-          <Route path='/IntroLevel1Page' element={<IntroLevel1Page />}/>
-          <Route path='/level1' element={<LevelUmPage />}/>
+          <Route path='/FirstVideo' element={<FirstVideoPage />}/>
+          <Route path='/IntroLevel1' element={<IntroLevel1Page />}/>
+          <Route path='/Level1' element={<LevelUmPage />}/>
         </Routes>
       </BrowserRouter>
     </div>

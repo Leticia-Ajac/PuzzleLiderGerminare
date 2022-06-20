@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './style.css'
 
 const useCountdown = (targetDate) => {
     const countDownDate = new Date(targetDate).getTime();
@@ -32,16 +33,15 @@ const getReturnValues = (countDown) => {
 
 const ExpiredNotice = () => {
     return (
-        <div className="expired-notice">
-            <span>Expired!!!</span>
-            <p>Please select a future date and time.</p>
+        <div className="clockBox">
+            <span>00:00</span>
         </div>
         );
     };
 
     const DateTimeDisplay = ({ value, type, isDanger }) => {
         return (
-            <div className={isDanger ? 'countdown danger' : 'countdown'}>
+            <div className={isDanger ? 'countdown danger ' : 'countdown'}>
                 <p>{value}</p>
                 <span>{type}</span>
             </div>
@@ -50,8 +50,8 @@ const ExpiredNotice = () => {
 
     const ShowCounter = ({ minutes, seconds }) => {
         return (
-            <div className="show-counter">
-                <a className="countdown-link">
+            <div className="clockBox">
+                <a className="countdown-link" style={{marginTop:'-15px'}}>
                 <DateTimeDisplay value={minutes} isDanger={false} />
                 <p>:</p>
                 <DateTimeDisplay value={seconds} isDanger={false} />
@@ -59,7 +59,5 @@ const ExpiredNotice = () => {
             </div>
         );
     };
-
-
 
 export { useCountdown, ExpiredNotice, ShowCounter };
