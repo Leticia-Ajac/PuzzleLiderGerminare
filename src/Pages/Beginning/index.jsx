@@ -22,7 +22,7 @@ export default function BeginningPage(){
             <img src={Hacker} alt="hacker" style={{width: '390px'}} />
 
         </div>
-        <Press onClick={navegate} to='/level1'  >PRESS START</Press>
+        <Press onClick={navegate} to='/firstVideo'  >PRESS START</Press>
         </Borda>
     )
 }
