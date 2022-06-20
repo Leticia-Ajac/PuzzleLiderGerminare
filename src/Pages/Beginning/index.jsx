@@ -2,11 +2,15 @@ import * as React from "react";
 import Hacker from "../../Assets/hacker.png"
 import './style.css'
 
-export default function BeginningPage(){
+import Borda from "../../Components/Border/index";
+import { Link, useNavigate } from "react-router-dom";
+import { Press } from "../../Components/PRESS/style";
 
+export default function BeginningPage(){
+    const navegate = useNavigate()
 
     return (
-        <>
+        <Borda corBorda='#fff' >
         <div className="container">
             <div className="containerText" >
                 <div className="groupText">
@@ -18,7 +22,7 @@ export default function BeginningPage(){
             <img src={Hacker} alt="hacker" style={{width: '390px'}} />
 
         </div>
-        <p style={{margin:'37px auto 0', fontSize:'24px'}} >PRESS START</p>
-        </>
+        <Press onClick={navegate} to='/level1'  >PRESS START</Press>
+        </Borda>
     )
 }
