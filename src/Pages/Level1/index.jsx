@@ -32,13 +32,16 @@ export default function LevelUmPage() {
             <Header level='1' titulo='CAÇA PALAVRAS' />
 
             <div style={{border:'1px solid pink', width:'90%', height:'70%',display:'flex',flexDirection:'row', justifyContent:'space-around'}} >
+                
 
                 <div style={{width:'400px', border:'1px solid red', height:'100px'}} >lalala</div>
 
-                <div style={{width:'400px', border:'1px solid red', height:'100px', display:'flex', justifyContent:'center'}} >
+                <div style={{width:'400px', border:'1px solid red', display:'flex',flexDirection:'column', alignItems:'center', justifyContent:'space-around'}} >
                     <CountdownTimer className targetDate={dateTimeAfterThreeDays}  />
+                        
                 </div>
-                
+
+
             </div>
         </Borda>
     );
