@@ -1,0 +1,35 @@
+.levelUmMainCont {
+    border: 1px solid ;
+    height: 80vh;
+    width: 80%;
+}
+
+.countdown-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #930000;
+    display: flex;
+    justify-content: center;
+    color: #930000;
+    align-items: center;
+    height: 55px;
+    width: 100px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item:hover{
+    
+}
