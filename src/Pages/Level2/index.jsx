@@ -23,7 +23,7 @@ export default function LevelDoisPage(){
         };
 
     const agora = new Date().getTime();
-    const dateTimeAfterThreeDays = agora + 2000;
+    const dateTimeAfterThreeDays = agora + 181000;
 
     return(
         <Borda corBorda="#5D1C7C" color="#5D1C7C" justifyContent="space-around">

@@ -4,7 +4,7 @@ import './style.css'
 
 import Borda from "../../Components/Border/index";
 import { Link, useNavigate } from "react-router-dom";
-import { Press } from "./style";
+import { Press } from "../../Components/Press/style";
 
 export default function BeginningPage(){
     const navegate = useNavigate()
