@@ -58,7 +58,7 @@
     color: #930000;
     align-items: center;
     height: 55px;
-    width: 150px;
+    width: 90px;
     padding: 20px;
     font-size: 20px;
     text-align: center;
@@ -81,7 +81,7 @@
     background-color: #930000;
 }
 .certo {
-    background-color: #21DA49;
-    color: #17872f;
-    border: 1px solid #17872f;
+    color: #21DA49;
+    background-color: #21DA4933;
+    border: 1px solid #21DA49;
 }

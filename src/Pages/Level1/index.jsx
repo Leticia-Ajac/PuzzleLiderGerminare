@@ -29,9 +29,49 @@ export default function LevelTresPage() {
     const [valor4, setValor4] = React.useState('')
 
     function onSubmit() {
-        const list = ([valor1, valor2, valor3, valor4].sort).toString
-        console.log(list)
-    }
+        const list = ([valor1, valor2, valor3, valor4].sort()).toString()
+        const inputlvUmClasse = Array.from(
+            document.getElementsByClassName("inputVerde")
+        );
+
+        if (list == 'dominante,extrovertido,formal,impaciente') {
+            console.log('certinho')
+        } else {
+            inputlvUmClasse.forEach(element => {
+                element.classList.add('erradoLv1')
+                setTimeout(() => {
+                    inputlvUmClasse.forEach(element => {
+                        element.classList.remove('erradoLv1')
+                    })
+                }, 500)
+                setTimeout(() => {
+                    inputlvUmClasse.forEach(element => {
+                        element.classList.add('erradoLv1')
+                    })
+                }, 1000)
+                setTimeout(() => {
+                    inputlvUmClasse.forEach(element => {
+                        element.classList.remove('erradoLv1')
+                    })
+                }, 1500)
+                setTimeout(() => {
+                    inputlvUmClasse.forEach(element => {
+                        element.classList.add('erradoLv1')
+                    })
+                }, 2000)
+                setTimeout(() => {
+                    inputlvUmClasse.forEach(element => {
+                        element.classList.remove('erradoLv1')
+                        setValor1('')
+                        setValor2('')
+                        setValor3('')
+                        setValor4('')
+                    })
+                }, 2500)
+
+                
+        })
+    }}
 
     const agora = new Date().getTime();
     const dateTimeAfterThreeDays = agora + 180000;
@@ -42,17 +82,17 @@ export default function LevelTresPage() {
 
         <div style={{ width:'90%', height:'70%',display:'flex',flexDirection:'row', justifyContent:'space-around'}} >
 
-        <div className="esquerdaContainer">
+        <div className="esquerdaContainerVerde">
             <img src={cacaPalavras}/>
         </div>
 
-            <div className="direitaContainer">
+            <div className="direitaContainerVerde">
                 <CountdownTimer className targetDate={dateTimeAfterThreeDays} />
                 <p>Características do P.I.</p>
-                <input className="inputVerde" value={valor1} onChange={(e) => {setValor1((e.target.value))}}/>
-                <input className="inputVerde" value={valor2} onChange={(e) => {setValor2((e.target.value))}}/>
-                <input className="inputVerde" value={valor3} onChange={(e) => {setValor3((e.target.value))}}/>
-                <input className="inputVerde" value={valor4} onChange={(e) => {setValor4((e.target.value))}}/>
+                <input className="inputVerde" value={valor1} onChange={(e) => {setValor1((e.target.value).toLowerCase())}}/>
+                <input className="inputVerde" value={valor2} onChange={(e) => {setValor2((e.target.value).toLowerCase())}}/>
+                <input className="inputVerde" value={valor3} onChange={(e) => {setValor3((e.target.value).toLowerCase())}}/>
+                <input className="inputVerde" value={valor4} onChange={(e) => {setValor4((e.target.value).toLowerCase())}}/>
                 <button className="btnSubmitVerde" onClick={onSubmit}> {'>'} </button>
             </div>
 
