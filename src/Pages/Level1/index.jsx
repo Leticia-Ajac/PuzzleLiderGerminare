@@ -4,8 +4,6 @@ import { render } from "react-dom";
 import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer/index';
 import Header from "../../Components/HeaderLevels";
 import Borda from "../../Components/Border/index";
-
-
 import './style.css'
 
 export default function LevelTresPage() {

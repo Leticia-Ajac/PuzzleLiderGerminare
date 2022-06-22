@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import './App.css'
 
-import LevelUmPage from './Pages/Level1';
+import LevelUmPage from './Pages/Level1'
+import LevelDoisPage from './Pages/Level2'
 import LevelTresPage from './Pages/Level3';
 import BeginningPage from './Pages/Beginning'
 import FirstVideoPage from './Pages/FirstVideo'
@@ -21,6 +22,7 @@ function App() {
           <Route path='/FirstVideo' element={<FirstVideoPage />}/>
           <Route path='/IntroLevel1' element={<IntroLevel1Page />}/>
           <Route path='/Level1' element={<LevelUmPage />}/>
+          <Route path='/Level2' element={<LevelDoisPage />}/>
           <Route path='/Level3' element={<LevelTresPage />}/>
         </Routes>
       </BrowserRouter>
