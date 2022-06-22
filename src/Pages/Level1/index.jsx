@@ -82,11 +82,11 @@ export default function LevelTresPage() {
 
         <div style={{ width:'90%', height:'70%',display:'flex',flexDirection:'row', justifyContent:'space-around'}} >
 
-        <div className="esquerdaContainer">
+        <div className="esquerdaContainerVerde">
             <img src={cacaPalavras}/>
         </div>
 
-            <div className="direitaContainer">
+            <div className="direitaContainerVerde">
                 <CountdownTimer className targetDate={dateTimeAfterThreeDays} />
                 <p>Características do P.I.</p>
                 <input className="inputVerde" value={valor1} onChange={(e) => {setValor1((e.target.value).toLowerCase())}}/>
