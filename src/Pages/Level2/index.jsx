@@ -3,7 +3,7 @@ import Borda from "../../Components/Border/index";
 import Cubo from "../../Components/Cubo/index";
 import bola from "../../Assets/DRADIN.png";
 import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer/index';
-import InputSeparado from "../../Components/Input/index"
+import InputLevel2 from "../../Components/InputLevel2/index"
 import './style.css'
 
 export default function LevelDoisPage(){
@@ -23,7 +23,7 @@ export default function LevelDoisPage(){
         };
 
     const agora = new Date().getTime();
-    const dateTimeAfterThreeDays = agora + 181000;
+    const dateTimeAfterThreeDays = agora + 5000;
 
     return(
         <Borda corBorda="#5D1C7C" color="#5D1C7C" justifyContent="space-around">
@@ -66,7 +66,7 @@ export default function LevelDoisPage(){
                 </Cubo>
             </div>
             <div>
-                <InputSeparado></InputSeparado>
+                <InputLevel2></InputLevel2>
             </div>
 
         </Borda>
