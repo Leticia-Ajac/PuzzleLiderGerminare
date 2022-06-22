@@ -1,45 +1,46 @@
 import * as React from 'react'
-//import { usePinInput } from 'react-pin-input-hook'
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from 'react-hook-form'
 import { InputBox } from './style';
 
-
-
 export default function InputSeparado() {
-    const {register, getValues} = useForm();
-    
-    
+    const {register, getValues} = useForm()
+    const navegate = useNavigate()
+    const [nana,setNana] = React.useState('/Level2')
     return (
-        <>
-        <form>
-            <InputBox maxLength={1} type="text" {...register("teste1")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste2")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste3")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste4")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste5")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste6")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste7")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste8")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste9")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste10")} className='levelTwo' />
-            <InputBox maxLength={1} type="text" {...register("teste11")} className='levelTwo' />
+        <form style={{marginBottom:'30px'}} >
+            <InputBox maxLength={1} type="text" {...register("teste1")} autoFocus />
+            <InputBox maxLength={1} type="text" {...register("teste2")} />
+            <InputBox maxLength={1} type="text" {...register("teste3")} />
+            <InputBox maxLength={1} type="text" {...register("teste4")} />
+            <InputBox maxLength={1} type="text" {...register("teste5")} />
+            <InputBox maxLength={1} type="text" {...register("teste6")} />
+            <InputBox maxLength={1} type="text" {...register("teste7")} />
+            <InputBox maxLength={1} type="text" {...register("teste8")} />
+            <InputBox maxLength={1} type="text" {...register("teste9")} />
+            <InputBox maxLength={1} type="text" {...register("teste10")} />
+            <InputBox maxLength={1} type="text" {...register("teste11")} />
             <br></br>
-            <button type="button" style={{margin:'50px 0 60px auto', fontSize:'20px', width:'50px', background:'none',border:'1px solid #5D1C7C', color:'#5D1C7C'}}
+            <Link 
+            style={{margin:'50px 0 60px auto', fontSize:'20px', padding:'0 30px', background:'none',border:'1px solid #5D1C7C', color:'#5D1C7C', textDecoration:'none'}}
+
+            to={nana}
+
             onClick={()=>{
                 const mult = getValues(["teste1", "teste2", "teste3", "teste4", "teste5", "teste6", "teste7", "teste8", "teste9", "teste10", "teste11"]);
 
-                
-
-                console.log(mult.join('').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ""))
+                if(mult.join('').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") == 'EXPERIENCIA'){
+                    setNana('/IntroLevel1')
+                    return navegate
+                }else{
+                    alert('nao foi dessa vez')
+                }
             }}
-            
-            > &gt; </button>
+
+            > &gt; </Link>
+            <br />
         </form>
-
-        </>
     )
-
-    
 }
 
 // export default function InputSeparado() {

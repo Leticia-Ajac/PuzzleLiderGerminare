@@ -30,7 +30,7 @@ export default function LevelDoisPage(){
             <Header level='2' titulo='ENIGMA DAS FIGURAS' />
             <CountdownTimer className targetDate={dateTimeAfterThreeDays}  />
 
-            <div style={{display:'flex', flexDirection:'row', widows:'90%', justifyContent:'space-around', margin:'30px auto'}} >
+            <div style={{display:'flex', flexDirection:'row', widows:'90%', justifyContent:'space-around', margin:'20px auto'}} >
                 <Cubo>
                     <img src={bola} alt="" className="uc" />
                 </Cubo>
