@@ -11,8 +11,7 @@ import LevelDoisPage from './Pages/Level2'
 import LevelTresPage from './Pages/Level3';
 import BeginningPage from './Pages/Beginning'
 import FirstVideoPage from './Pages/FirstVideo'
-import IntroLevel1Page from './Pages/IntroLevel1'
-import IntroLevel2Page from './Pages/IntroLevel2'
+import {IntroLevel1Page,IntroLevel2Page, IntroLevel3Page } from './Pages/Intros'
 
 function App() {
   return (
