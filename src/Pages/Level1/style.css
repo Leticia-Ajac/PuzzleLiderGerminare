@@ -9,3 +9,55 @@
     display: flex;
     flex-direction: row;
 }
+
+.esquerdaContainer{
+    width: 400px;
+    display: flex;
+    margin-top: -20px;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.direitaContainer{
+    width: 400px;
+    margin-top: -100px;
+    padding-left: 100px;
+    gap: 20px;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: stretch
+}
+
+.btnSubmitVerde {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #21DA49;
+    display: flex;
+    justify-content: center;
+    color: #21DA49;
+    align-items: center;
+    height: 55px;
+    width: 150px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btnSubmitVerde:hover{
+    cursor: pointer;
+    background-color: #21DA4933;
+}
+
+.inputVerde {
+    background-color: #21DA4933;
+    border: 1px solid #21DA49;
+    display: flex;
+    justify-content: center;
+    color: #21DA49;
+    align-items: center;
+    height: 10px;
+    width: 200px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}

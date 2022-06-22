@@ -39,18 +39,19 @@
     width: 400px;
     display: flex;
     justify-content: center;
-    border: 1px solid red 
 }
 
-.direitaContainer {
+.direitaContainer{
     width: 400px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid red 
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: stretch
 }
 
 .btnSubmit {
     background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
     border: 1px solid #930000;
     display: flex;
     justify-content: center;
@@ -78,4 +79,9 @@
 
 .errado {
     background-color: #930000;
+}
+.certo {
+    background-color: #21DA49;
+    color: #17872f;
+    border: 1px solid #17872f;
 }
