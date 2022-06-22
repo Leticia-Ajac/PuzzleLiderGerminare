@@ -2,7 +2,7 @@ import Borda from "../../Components/Border"
 import gif from '../../Assets/questionMark.gif'
 
 import * as React from "react";
-import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer/index';
+import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/TimerFirstVideo/index';
 
 export default function FirstVideoPage() {
     const CountdownTimer = ({ targetDate }) => {
@@ -21,11 +21,11 @@ export default function FirstVideoPage() {
         };
 
     const agora = new Date().getTime();
-    const dateTimeAfterThreeDays = agora + 52000;
+    const dateTimeAfterThreeDays = agora + 2000;
     return (
         <Borda corBorda="#fff" justifyContent="center" >
             <img src={gif} alt="gif" style={{border:'1px solid #fff'}} />
-            <p>ola</p>
+            <p></p>
             <CountdownTimer className targetDate={dateTimeAfterThreeDays}  />
         </Borda>
     )
