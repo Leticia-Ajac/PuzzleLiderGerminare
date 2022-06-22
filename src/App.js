@@ -12,6 +12,7 @@ import LevelTresPage from './Pages/Level3';
 import BeginningPage from './Pages/Beginning'
 import FirstVideoPage from './Pages/FirstVideo'
 import {IntroLevel1Page,IntroLevel2Page, IntroLevel3Page } from './Pages/Intros'
+import {EndingLevel1Page,EndingLevel2Page, EndingLevel3Page } from './Pages/Endings'
 import RulesPage from './Pages/Rules/index'
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
           <Route path='/FirstVideo' element={<FirstVideoPage />}/>
           <Route path='/IntroLevel1' element={<IntroLevel1Page />}/>
           <Route path='/IntroLevel2' element={<IntroLevel2Page />}/>
+          <Route path='/IntroLevel3' element={<IntroLevel3Page />}/>
+          <Route path='/EndingLevel1' element={<EndingLevel1Page />}/>
+          <Route path='/EndingLevel2' element={<EndingLevel2Page />}/>
+          <Route path='/EndingLevel3' element={<EndingLevel3Page />}/>
           <Route path='/Level1' element={<LevelUmPage />}/>
           <Route path='/Level2' element={<LevelDoisPage />}/>
           <Route path='/Level3' element={<LevelTresPage />}/>
