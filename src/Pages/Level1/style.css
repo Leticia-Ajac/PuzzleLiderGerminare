@@ -37,7 +37,7 @@
     color: #21DA49;
     align-items: center;
     height: 55px;
-    width: 150px;
+    width: 90px;
     padding: 20px;
     font-size: 20px;
     text-align: center;
@@ -60,4 +60,10 @@
     padding: 20px;
     font-size: 18px;
     text-align: center;
+}
+
+.erradoLv1 {
+    border-color:rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    background-color: #930000;
 }
