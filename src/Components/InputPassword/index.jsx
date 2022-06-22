@@ -3,10 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from 'react-hook-form'
 import { InputBox } from './style';
 
-export default function InputSeparado() {
+export default function InputPassword() {
     const {register, getValues} = useForm()
     const navegate = useNavigate()
-    const [nana,setNana] = React.useState('/Level2')
+    const [nana,setNana] = React.useState('/SecretPassword')
     return (
         <form style={{marginBottom:'30px'}} >
             <InputBox maxLength={1} type="text" {...register("teste1")} autoFocus />
@@ -20,6 +20,7 @@ export default function InputSeparado() {
             <InputBox maxLength={1} type="text" {...register("teste9")} />
             <InputBox maxLength={1} type="text" {...register("teste10")} />
             <InputBox maxLength={1} type="text" {...register("teste11")} />
+            <InputBox maxLength={1} type="text" {...register("teste12")} />
             <br></br>
             <Link 
             style={{margin:'50px 0 60px auto', fontSize:'20px', padding:'0 30px', background:'none',border:'1px solid #5D1C7C', color:'#5D1C7C', textDecoration:'none'}}
@@ -29,8 +30,8 @@ export default function InputSeparado() {
             onClick={()=>{
                 const mult = getValues(["teste1", "teste2", "teste3", "teste4", "teste5", "teste6", "teste7", "teste8", "teste9", "teste10", "teste11"]);
 
-                if(mult.join('').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") == 'EXPERIENCIA'){
-                    setNana('/IntroLevel1')
+                if(mult.join('').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") == 'COLETIVIDADE'){
+                    setNana('/SecondVideo')
                     return navegate
                 }else{
                     alert('nao foi dessa vez')

@@ -1,0 +1,9 @@
+.clockBox {
+    width: 100px;
+    height: 40px;
+    border: 1px solid;
+    display: none;
+    justify-content: center;
+    font-size: 20px;
+}
+
