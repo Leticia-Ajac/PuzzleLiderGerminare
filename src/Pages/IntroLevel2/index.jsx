@@ -2,10 +2,11 @@ import Borda from "../../Components/Border"
 import imagem from '../../Assets/DRADIN.png'
 import './style.css'
 import { Press } from "../../Components/Press/style";
+import { useNavigate } from "react-router-dom";
 
 
 export default function IntroLevel2Page(){
-
+    const navegate = useNavigate()
     return(
         <Borda corBorda="#fff" justifyContent="center" >
             <img src={imagem} alt="" className="girar" style={{width:'150px'}} />
