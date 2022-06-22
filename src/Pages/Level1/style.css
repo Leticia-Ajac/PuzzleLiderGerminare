@@ -11,17 +11,15 @@
 }
 
 .esquerdaContainerVerde{
-    width: 400px;
+    width: 530px;
     display: flex;
+    align-items: center;
     margin-top: -20px;
     justify-content: center;
-    padding-left: 100px;
 }
 
 .direitaContainerVerde{
     width: 400px;
-    margin-top: -100px;
-    padding-left: 100px;
     gap: 20px;
     display: flex ;
     flex-direction: column ;
@@ -55,10 +53,10 @@
     justify-content: center;
     color: #21DA49;
     align-items: center;
-    height: 10px;
+    height: 20px;
     width: 200px;
-    padding: 20px;
-    font-size: 18px;
+    padding: 8px;
+    font-size: 12px;
     text-align: center;
 }
 

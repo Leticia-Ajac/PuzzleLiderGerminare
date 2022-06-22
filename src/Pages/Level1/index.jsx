@@ -23,6 +23,9 @@ export default function LevelTresPage() {
             }
         };
 
+        const agora = new Date().getTime();
+        const dateTimeAfterThreeDays = agora + 180000;
+
     const [valor1, setValor1] = React.useState('')
     const [valor2, setValor2] = React.useState('')
     const [valor3, setValor3] = React.useState('')
@@ -73,21 +76,18 @@ export default function LevelTresPage() {
         })
     }}
 
-    const agora = new Date().getTime();
-    const dateTimeAfterThreeDays = agora + 180000;
-
     return (
         <Borda corBorda="#21DA49" color="#21DA49" justifyContent="space-around">
-        <Header level='1' titulo='Hyper CodeNames' style='margin: 0;' />
+        <Header level='1' titulo='Caça-palavras' style='margin: 0;' />
 
-        <div style={{ width:'90%', height:'70%',display:'flex',flexDirection:'row', justifyContent:'space-around'}} >
+        <div style={{ width:'90%', height:'70%',display:'flex',flexDirection:'row', justifyContent:'space-between'}} >
 
         <div className="esquerdaContainerVerde">
-            <img src={cacaPalavras}/>
+            <img src={cacaPalavras} style={{width:'80%', height:'100%'}}/>
         </div>
 
             <div className="direitaContainerVerde">
-                <CountdownTimer className targetDate={dateTimeAfterThreeDays} />
+                <CountdownTimer className='timerVerde' targetDate={dateTimeAfterThreeDays} />
                 <p>Características do P.I.</p>
                 <input className="inputVerde" value={valor1} onChange={(e) => {setValor1((e.target.value).toLowerCase())}}/>
                 <input className="inputVerde" value={valor2} onChange={(e) => {setValor2((e.target.value).toLowerCase())}}/>
