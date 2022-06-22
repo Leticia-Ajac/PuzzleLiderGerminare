@@ -18,7 +18,6 @@ export default function TheEndPage(){
                 </div>
             </div>
             <img src={Hacker} alt="hacker" style={{width: '390px'}} />
-
         </div>
         </Borda>
     )
