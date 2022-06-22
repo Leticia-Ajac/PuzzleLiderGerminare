@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Link, useNavigate } from "react-router-dom";
+import telaAzul from '../../Assets/ERROR.gif' 
 import './style.css'
 
 const useCountdown = (targetDate) => {
@@ -32,9 +34,15 @@ const getReturnValues = (countDown) => {
 };
 
 const ExpiredNotice = () => {
+    const navegate = useNavigate()
     return (
-        <div className="clockBox">
-            <span>00:00</span>
+        <div style={{position:'absolute', width:'1300px', height:'600px', backgroundColor:'#000', display:'flex', alignContent:'center'}} >
+            <img src={telaAzul} alt="ERROR" style={{margin:'auto', width:'800px'}} />
+            <Link
+                style={{color:'#fff', width:'200px', height:'70px', margin:'0 0 0 -200px'}}
+                onClick={navegate}
+                to='/IntroLevel1'
+            ></Link>
         </div>
         );
     };
