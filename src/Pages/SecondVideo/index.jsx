@@ -25,7 +25,7 @@ export default function SecondVideoPage() {
     return (
         <Borda corBorda="#fff" justifyContent="center" >
             <p style={{fontSize:'24px', margin:'-10px 0 30px'}} >O QUE É SER UM  <span style={{textDecoration:'line-through'}} >HACKER</span>  LÍDER GERMINARE ?</p>
-            <img src={gif} alt="gif" style={{border:'1px solid #fff'}} />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Cgr2ggaIZpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <CountdownTimer className targetDate={dateTimeAfterThreeDays} />
         </Borda>
     )
