@@ -1,5 +1,5 @@
 import { styled } from "@mui/system";
-import { Box } from "@mui/material"
+import { Box } from "@mui/material";
 
 export const Scubo = styled(Box)({
     width:'60px',
