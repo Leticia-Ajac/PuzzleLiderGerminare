@@ -3,31 +3,23 @@ import imagem from '../../Assets/DRADIN.png'
 import './style.css'
 import { Press } from "../../Components/Press/style";
 import { Link, useNavigate } from "react-router-dom";
-import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/TimerIntro1/index';
+import * as React from "react";
 
 export function IntroLevel1Page(){
-    const CountdownTimer = ({ targetDate }) => {
-        const [days, hours, minutes, seconds] = useCountdown(targetDate);
-        
-            if (days + hours + minutes + seconds <= 0) {
-            return <ExpiredNotice />;
-            } else {
-            return (
-                <ShowCounter
-                minutes={minutes}
-                seconds={seconds}
-                />
-            );
-            }
-        };
+    const navegate = useNavigate()
+    const sim = setTimeout(
+        function(){
+            document.getElementById('sim').style.display = 'flex'
+            console.log(document.getElementById('sim'))
+            return navegate
+        }, 3000
+    );
 
-    const agora = new Date().getTime();
-    const dateTimeAfterThreeDays = agora + 2000;
     return(
         <Borda corBorda="#fff" justifyContent="center" >
             <img src={imagem} alt="" className="girar" style={{width:'150px'}} />
             <p style={{fontSize:'32px', margin:'50px 0 20px'}} >LEVEL 1</p>
-            <CountdownTimer className targetDate={dateTimeAfterThreeDays}  />
+            <Link style={{display:'none'}} id="sim" className="i1_input" onClick={sim} to="/Level1" > {'>'} </Link>
         </Borda>
     )
 }
