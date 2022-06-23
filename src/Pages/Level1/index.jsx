@@ -7,6 +7,10 @@ import Borda from "../../Components/Border/index";
 import cacaPalavras from "../../Assets/cacapalavras.png"
 import './style.css'
 
+
+const agora = new Date().getTime();
+const dateTimeAfterThreeDays = agora + 180000;
+
 export default function LevelTresPage() {
     const CountdownTimer = ({ targetDate }) => {
         const [days, hours, minutes, seconds] = useCountdown(targetDate);
@@ -22,9 +26,6 @@ export default function LevelTresPage() {
             );
             }
         };
-
-        const agora = new Date().getTime();
-        const dateTimeAfterThreeDays = agora + 180000;
 
     const [valor1verde, setValor1Verde] = React.useState('')
     const [valor2verde, setValor2Verde] = React.useState('')
