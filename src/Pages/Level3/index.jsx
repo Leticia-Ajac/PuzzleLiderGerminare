@@ -1,6 +1,6 @@
 import * as React from "react";
 import { render } from "react-dom";
-
+import { Link, useNavigate } from "react-router-dom";
 import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer3/index';
 import Header from "../../Components/HeaderLevels";
 import Borda from "../../Components/Border/index";
@@ -40,6 +40,7 @@ export default function LevelUmPage() {
         }
     }
 
+    const navegate = useNavigate()
 
 
     function onSubmit(e) {
@@ -52,6 +53,7 @@ export default function LevelUmPage() {
             selecionadosClasse.forEach(element => {
                 element.classList.add('certo')
             })
+            navegate("/EndingLevel3")
 
         } else {
         selecionadosClasse.forEach(element => {
@@ -92,7 +94,7 @@ export default function LevelUmPage() {
     }
 
     const agora = new Date().getTime();
-    const dateTimeAfterThreeDays = agora + 3000;
+    const dateTimeAfterThreeDays = agora + 15000;
 
     return (
         <Borda corBorda="#930000" color="#930000" justifyContent="space-around">

@@ -26,15 +26,15 @@ export default function LevelTresPage() {
         const agora = new Date().getTime();
         const dateTimeAfterThreeDays = agora + 180000;
 
-    const [valor1, setValor1] = React.useState('')
-    const [valor2, setValor2] = React.useState('')
-    const [valor3, setValor3] = React.useState('')
-    const [valor4, setValor4] = React.useState('')
+    const [valor1verde, setValor1Verde] = React.useState('')
+    const [valor2verde, setValor2Verde] = React.useState('')
+    const [valor3verde, setValor3Verde] = React.useState('')
+    const [valor4verde, setValor4Verde] = React.useState('')
 
 
     
     function onSubmit() {
-        const list = ([valor1, valor2, valor3, valor4].sort()).toString()
+        const list = ([valor1verde, valor2verde, valor3verde, valor4verde].sort()).toString()
         const inputlvUmClasse = Array.from(
             document.getElementsByClassName("inputVerde")
         );
@@ -42,6 +42,7 @@ export default function LevelTresPage() {
         if (list == 'DOMINANTE,EXTROVERTIDO,FORMAL,IMPACIENTE') {
             console.log('certinho')
         } else {
+            
             inputlvUmClasse.forEach(element => {
                 element.classList.add('erradoLv1')
                 setTimeout(() => {
@@ -67,10 +68,10 @@ export default function LevelTresPage() {
                 setTimeout(() => {
                     inputlvUmClasse.forEach(element => {
                         element.classList.remove('erradoLv1')
-                        setValor1('')
-                        setValor2('')
-                        setValor3('')
-                        setValor4('')
+                        setValor1Verde('')
+                        setValor2Verde('')
+                        setValor3Verde('')
+                        setValor4Verde('')
                     })
                 }, 2500)
 
@@ -91,10 +92,15 @@ export default function LevelTresPage() {
             <div className="direitaContainerVerde">
                 <CountdownTimer className='timerVerde' targetDate={dateTimeAfterThreeDays} />
                 <p>CARACTERÍSTICAS PI <br/>DE UM LÍDER GERMINARE</p>
-                <input className="inputVerde" value={valor1} onChange={(e) => {setValor1((e.target.value).toUpperCase())}}/>
-                <input className="inputVerde" value={valor2} onChange={(e) => {setValor2((e.target.value).toUpperCase())}}/>
-                <input className="inputVerde" value={valor3} onChange={(e) => {setValor3((e.target.value).toUpperCase())}}/>
-                <input className="inputVerde" value={valor4} onChange={(e) => {setValor4((e.target.value).toUpperCase())}}/>
+                <input className="inputVerde" value={valor1verde} onChange={(e) => {
+                    setValor1Verde((e.target.value).toUpperCase())
+                    console.log(e.target.value)
+                }
+
+                    }/>
+                <input className="inputVerde" value={valor2verde} onChange={(e) => {setValor2Verde((e.target.value).toUpperCase())}}/>
+                <input className="inputVerde" value={valor3verde} onChange={(e) => {setValor3Verde((e.target.value).toUpperCase())}}/>
+                <input className="inputVerde" value={valor4verde} onChange={(e) => {setValor4Verde((e.target.value).toUpperCase())}}/>
                 <button className="btnSubmitVerde" onClick={onSubmit}> {'>'} </button>
             </div>
 
