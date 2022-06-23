@@ -92,7 +92,7 @@ export default function LevelUmPage() {
     }
 
     const agora = new Date().getTime();
-    const dateTimeAfterThreeDays = agora + 180000;
+    const dateTimeAfterThreeDays = agora + 3000;
 
     return (
         <Borda corBorda="#930000" color="#930000" justifyContent="space-around">

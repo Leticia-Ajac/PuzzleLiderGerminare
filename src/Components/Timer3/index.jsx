@@ -36,7 +36,7 @@ const getReturnValues = (countDown) => {
 const ExpiredNotice = () => {
     const navegate = useNavigate()
     return (
-        <div style={{position:'absolute', width:'1300px', height:'600px', backgroundColor:'#000', display:'flex', alignContent:'center'}} >
+        <div style={{position:'absolute', width:'1300px', height:'800px', backgroundColor:'#000', display:'flex', alignContent:'center', margin:'-250px 0 400px -445px'}} >
             <img src={telaAzul} alt="ERROR" style={{margin:'auto', width:'800px'}} />
             <Link
                 style={{color:'#fff', width:'200px', height:'70px', margin:'0 0 0 -200px'}}
