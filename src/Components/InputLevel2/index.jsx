@@ -6,7 +6,6 @@ import { InputBox } from './style';
 export default function InputLevel2() {
     const {register, getValues} = useForm()
     const navegate = useNavigate()
-    const [nana,setNana] = React.useState('/Level2')
     return (
         <form style={{marginBottom:'30px'}} >
             <InputBox maxLength={1} type="text" {...register("teste1")} autoFocus />
@@ -21,23 +20,19 @@ export default function InputLevel2() {
             <InputBox maxLength={1} type="text" {...register("teste10")} />
             <InputBox maxLength={1} type="text" {...register("teste11")} />
             <br></br>
-            <Link 
+            <button 
             style={{margin:'50px 0 60px auto', fontSize:'20px', padding:'0 30px', background:'none',border:'1px solid #5D1C7C', color:'#5D1C7C', textDecoration:'none'}}
-
-            to={nana}
 
             onClick={()=>{
                 const mult = getValues(["teste1", "teste2", "teste3", "teste4", "teste5", "teste6", "teste7", "teste8", "teste9", "teste10", "teste11"]);
 
                 if(mult.join('').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") == 'EXPERIENCIA'){
-                    setNana('/EndingLevel2')
-                    return navegate
+                    navegate("/EndingLevel2")
                 }else{
                     alert('nao foi dessa vez')
                 }
             }}
-
-            > &gt; </Link>
+            > &gt; </button>
             <br />
         </form>
     )

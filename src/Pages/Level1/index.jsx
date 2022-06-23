@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useNavigate } from "react-dom";
+import { useNavigate } from "react-router-dom";
 
 import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer1/index';
 import Header from "../../Components/HeaderLevels";
@@ -31,7 +31,7 @@ export default function LevelTresPage() {
     const [valor3verde, setValor3Verde] = React.useState('')
     const [valor4verde, setValor4Verde] = React.useState('')
 
-
+    const navegate = useNavigate()
     
     function onSubmit() {
         const list = ([valor1verde, valor2verde, valor3verde, valor4verde].sort()).toString()
@@ -41,6 +41,7 @@ export default function LevelTresPage() {
 
         if (list == 'DOMINANTE,EXTROVERTIDO,FORMAL,IMPACIENTE') {
             console.log('certinho')
+            navegate("/EndingLevel1")
         } else {
             
             inputlvUmClasse.forEach(element => {

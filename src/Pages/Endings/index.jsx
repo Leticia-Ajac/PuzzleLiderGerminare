@@ -33,7 +33,7 @@ export function EndingLevel3Page(){
         <Borda corBorda="#fff" justifyContent="center" >
             <p style={{fontSize:'32px', margin:'0 0 50px'}} >PARABÉNS</p>
             <img src={END3} alt="" style={{width:'150px'}} />
-            <Link onClick={navegate} to='/IntroLevel2'style={{fontSize:'32px', margin:'50px 0 -20px', textDecoration:'none', color:'white'}} >MÃOS PARA CIMA!!!</Link>
+            <Link onClick={navegate} to='/DefaultSecretPassword'style={{fontSize:'32px', margin:'50px 0 -20px', textDecoration:'none', color:'white'}} >MÃOS PARA CIMA!!!</Link>
         </Borda>
     )
 }
