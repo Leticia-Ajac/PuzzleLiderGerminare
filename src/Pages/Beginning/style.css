@@ -16,7 +16,7 @@
 }
 .aumentar {
     font-size: 22px;
-    transition: transform 1s 
+    transition: transform 0.5s 
 }
 .aumentar:hover {
     transform: scale(1.3);

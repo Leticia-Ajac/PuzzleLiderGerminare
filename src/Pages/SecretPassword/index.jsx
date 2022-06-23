@@ -19,7 +19,7 @@ export function DefaultSecretPassword() {
 
     setTimeout(()=>{
         document.getElementById('dicaFinal').style.display = 'inline'
-    }, 15000)
+    }, 8000)
 
     return(
         <Borda corBorda='white' justifyContent='center' >

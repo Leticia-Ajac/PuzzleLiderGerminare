@@ -39,7 +39,7 @@ export default function LevelTresPage() {
             document.getElementsByClassName("inputVerde")
         );
 
-        if (list == 'DOMINANTE,EXTROVERTIDO,FORMAL,IMPACIENTE') {
+        if (list === 'DOMINANTE,EXTROVERTIDO,FORMAL,IMPACIENTE') {
             console.log('certinho')
             navegate("/EndingLevel1")
         } else {
@@ -82,12 +82,12 @@ export default function LevelTresPage() {
 
     return (
         <Borda corBorda="#21DA49" color="#21DA49" justifyContent="space-around">
-        <Header level='1' titulo='Caça-palavras' style='margin: 0;' />
+        <Header level='1' titulo='Caça-palavras' style={{margin: '0'}} />
 
         <div style={{ width:'90%', height:'70%',display:'flex',flexDirection:'row', justifyContent:'space-between'}} >
 
         <div className="esquerdaContainerVerde">
-            <img src={cacaPalavras} style={{width:'80%', height:'100%'}}/>
+            <img src={cacaPalavras} style={{width:'80%', height:'100%'}} alt='caça palabras' />
         </div>
 
             <div className="direitaContainerVerde">
