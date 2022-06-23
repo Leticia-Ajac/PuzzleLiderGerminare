@@ -7,10 +7,9 @@ import * as React from "react";
 
 export function IntroLevel1Page(){
     const navegate = useNavigate()
-    const sim = setTimeout(
+    const nav = setTimeout(
         function(){
-            document.getElementById('sim').style.display = 'flex'
-            console.log(document.getElementById('sim'))
+            document.getElementById('nav').style.display = 'flex'
             return navegate
         }, 3000
     );
@@ -19,7 +18,7 @@ export function IntroLevel1Page(){
         <Borda corBorda="#fff" justifyContent="center" >
             <img src={imagem} alt="" className="girar" style={{width:'150px'}} />
             <p style={{fontSize:'32px', margin:'50px 0 20px'}} >LEVEL 1</p>
-            <Link style={{display:'none'}} id="sim" className="i1_input" onClick={sim} to="/Level1" > {'>'} </Link>
+            <Link style={{display:'none'}} id="nav" className="i1_input" onClick={nav} to="/Level1" > {'>'} </Link>
         </Borda>
     )
 }

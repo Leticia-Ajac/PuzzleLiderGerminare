@@ -2,21 +2,23 @@
     display: flex;
     justify-content: center;
 }
-
 .containerText {
-
     height: 360px;
-
 }
-
 .groupText {
-
     text-align: start;  
     width: 320px;
     height: 240px;
     margin-top: 110px;
 }
-
 .groupText p {
     margin: 0 0;
 }
+.aumentar {
+    font-size: 22px;
+    transition: transform 1s 
+}
+.aumentar:hover {
+    transform: scale(1.3);
+}
+
