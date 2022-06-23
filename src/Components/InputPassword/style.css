@@ -1,0 +1,18 @@
+.inputBranco {
+    width: 57px ;
+    margin:  0 6px 40px ;
+    height:  57px ;
+    background: none ;
+    border: none ;
+    border-bottom: 1px solid #fff ;
+    color: #fff ;
+    text-align:  center ;
+    font-size: 20px ;
+    text-transform: uppercase 
+}
+
+.erradoLvFinal {
+    border-color:rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    background-color: #930000;
+}
