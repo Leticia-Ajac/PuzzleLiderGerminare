@@ -10,6 +10,9 @@ import './style.css'
 import { getElementError } from "@testing-library/react";
 import { ContentPasteSearchOutlined } from "@mui/icons-material";
 
+const agora = new Date().getTime();
+const dateTimeAfterThreeDays = agora + 180000;
+
 export default function LevelUmPage() {
     var selecionados = []
 
@@ -93,8 +96,6 @@ export default function LevelUmPage() {
 
     }
 
-    const agora = new Date().getTime();
-    const dateTimeAfterThreeDays = agora + 15000;
 
     return (
         <Borda corBorda="#930000" color="#930000" justifyContent="space-around">

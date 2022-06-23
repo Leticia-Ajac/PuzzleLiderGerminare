@@ -1,0 +1,18 @@
+.inputRoxo {
+    width: 57px ;
+    margin:  0 6px 40px ;
+    height:  57px ;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #5D1C7C ;
+    color: #5D1C7C ;
+    text-align:  center ;
+    font-size: 20px ;
+    text-transform: uppercase 
+}
+
+.erradoLv2 {
+    border-color:rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    background-color: #930000;
+}
