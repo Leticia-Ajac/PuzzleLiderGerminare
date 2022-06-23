@@ -1,5 +1,5 @@
 import * as React from "react";
-import { render } from "react-dom";
+import { useNavigate } from "react-dom";
 
 import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer1/index';
 import Header from "../../Components/HeaderLevels";
@@ -31,13 +31,15 @@ export default function LevelTresPage() {
     const [valor3, setValor3] = React.useState('')
     const [valor4, setValor4] = React.useState('')
 
+
+    
     function onSubmit() {
         const list = ([valor1, valor2, valor3, valor4].sort()).toString()
         const inputlvUmClasse = Array.from(
             document.getElementsByClassName("inputVerde")
         );
 
-        if (list == 'dominante,extrovertido,formal,impaciente') {
+        if (list == 'DOMINANTE,EXTROVERTIDO,FORMAL,IMPACIENTE') {
             console.log('certinho')
         } else {
             inputlvUmClasse.forEach(element => {
@@ -88,11 +90,11 @@ export default function LevelTresPage() {
 
             <div className="direitaContainerVerde">
                 <CountdownTimer className='timerVerde' targetDate={dateTimeAfterThreeDays} />
-                <p>Características do P.I.</p>
-                <input className="inputVerde" value={valor1} onChange={(e) => {setValor1((e.target.value).toLowerCase())}}/>
-                <input className="inputVerde" value={valor2} onChange={(e) => {setValor2((e.target.value).toLowerCase())}}/>
-                <input className="inputVerde" value={valor3} onChange={(e) => {setValor3((e.target.value).toLowerCase())}}/>
-                <input className="inputVerde" value={valor4} onChange={(e) => {setValor4((e.target.value).toLowerCase())}}/>
+                <p>CARACTERÍSTICAS PI <br/>DE UM LÍDER GERMINARE</p>
+                <input className="inputVerde" value={valor1} onChange={(e) => {setValor1((e.target.value).toUpperCase())}}/>
+                <input className="inputVerde" value={valor2} onChange={(e) => {setValor2((e.target.value).toUpperCase())}}/>
+                <input className="inputVerde" value={valor3} onChange={(e) => {setValor3((e.target.value).toUpperCase())}}/>
+                <input className="inputVerde" value={valor4} onChange={(e) => {setValor4((e.target.value).toUpperCase())}}/>
                 <button className="btnSubmitVerde" onClick={onSubmit}> {'>'} </button>
             </div>
 
