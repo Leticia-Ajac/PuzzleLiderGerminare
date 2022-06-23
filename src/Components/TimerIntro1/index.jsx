@@ -40,7 +40,7 @@ const ExpiredNotice = () => {
             <Link
                 style={{textDecoration:'none', color:'#fff', fontSize:'18px'}}
                 onClick={navegate}
-                to='/Rules'
+                to='/Level1'
             > &gt; </Link>
         </div>
         );

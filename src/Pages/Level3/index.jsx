@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render } from "react-dom";
 
-import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer/index';
+import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer3/index';
 import Header from "../../Components/HeaderLevels";
 import Borda from "../../Components/Border/index";
 

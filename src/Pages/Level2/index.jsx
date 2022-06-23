@@ -2,7 +2,7 @@ import Header from "../../Components/HeaderLevels";
 import Borda from "../../Components/Border/index";
 import Cubo from "../../Components/Cubo/index";
 import bola from "../../Assets/DRADIN.png";
-import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer/index';
+import { useCountdown, ExpiredNotice, ShowCounter } from '../../Components/Timer2/index';
 import InputLevel2 from "../../Components/InputLevel2/index"
 import './style.css'
 
