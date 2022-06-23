@@ -23,15 +23,14 @@ export default function InputPassword() {
             <InputBox maxLength={1} type="text" {...register("teste12")} />
             <br></br>
             <Link 
-            style={{margin:'50px 0 60px auto', fontSize:'20px', padding:'0 30px', background:'none',border:'1px solid #5D1C7C', color:'#5D1C7C', textDecoration:'none'}}
+            style={{margin:'50px 0 60px auto', fontSize:'20px', padding:'0 30px', background:'none',border:'1px solid #fff', color:'#fff', textDecoration:'none'}}
 
             to={nana}
 
             onClick={()=>{
-                const mult = getValues(["teste1", "teste2", "teste3", "teste4", "teste5", "teste6", "teste7", "teste8", "teste9", "teste10", "teste11"]);
-
+                const mult = getValues(["teste1", "teste2", "teste3", "teste4", "teste5", "teste6", "teste7", "teste8", "teste9", "teste10", "teste11", "teste12"]);
                 if(mult.join('').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") == 'COLETIVIDADE'){
-                    setNana('/SecondVideo')
+                    setNana('/TheEnd')
                     return navegate
                 }else{
                     alert('nao foi dessa vez')
