@@ -13,7 +13,7 @@ import { ContentPasteSearchOutlined } from "@mui/icons-material";
 const agora = new Date().getTime();
 const dateTimeAfterThreeDays = agora + 180000;
 
-export default function LevelUmPage() {
+export default function LevelTresPage() {
     var selecionados = []
 
     const CountdownTimer = ({ targetDate }) => {
@@ -109,7 +109,7 @@ export default function LevelUmPage() {
                     <button onClick={selecionar} id='1' className={`grid-item`}>Liderança heróica</button>
                     <button onClick={selecionar} id='2' className={`grid-item`}>Desafiar o estabelecido</button>
                     <button onClick={selecionar} id='3' className={`grid-item`}>Liderança por exemplo</button>
-                    <button onClick={selecionar} id='4' className={`grid-item`}>Entregar de resultados</button>
+                    <button onClick={selecionar} id='4' className={`grid-item`}>Entregar resultados</button>
                     <button onClick={selecionar} id='5' className={`grid-item`}>Liderança diplomática</button>
                     <button onClick={selecionar} id='6' className={`grid-item`}>Direcionar</button>
                     <button onClick={selecionar} id='7' className={`grid-item`}>Centralizar</button>
@@ -125,7 +125,7 @@ export default function LevelUmPage() {
                     <CountdownTimer className targetDate={dateTimeAfterThreeDays} />
                     <p>1. Estilo de liderança positivo</p>
                     <p>2. Modelo padrão de gestão de pessoas</p>
-                    <p>3. Entender demandas da organização e da equipe</p>
+                    <p>3. Comunicar demandas da organização e da equipe</p>
                     <button className="btnSubmit" onClick={onSubmit}> {'>'} </button>
                 </div>
 
