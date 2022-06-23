@@ -18,7 +18,7 @@ export default function InputPassword() {
         const mult = getValues(["teste1", "teste2", "teste3", "teste4", "teste5", "teste6", "teste7", "teste8", "teste9", "teste10", "teste11", "teste12"]);
 
         if(mult.join('').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") == 'COLETIVIDADE'){
-            navegate("/SecondtVideo")
+            navegate("/SecondVideo")
         }else{
             inputlvBrancoClasse.forEach(element => {
                 element.classList.add('erradoLvFinal')
