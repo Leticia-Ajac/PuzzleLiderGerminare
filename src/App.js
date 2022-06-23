@@ -26,7 +26,7 @@ function App() {
           <Route path='/' element={<BeginningPage />} />
           <Route path='/TheEnd' element={<TheEndPage />} />
           <Route path='/FirstVideo' element={<FirstVideoPage />}/>
-          <Route path='/SecondtVideo' element={<SecondVideoPage />}/>
+          <Route path='/SecondVideo' element={<SecondVideoPage />}/>
           <Route path='/IntroLevel1' element={<IntroLevel1Page />}/>
           <Route path='/IntroLevel2' element={<IntroLevel2Page />}/>
           <Route path='/IntroLevel3' element={<IntroLevel3Page />}/>
