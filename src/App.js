@@ -16,7 +16,7 @@ import SecondVideoPage from './Pages/SecondVideo'
 import {IntroLevel1Page,IntroLevel2Page, IntroLevel3Page } from './Pages/Intros'
 import {EndingLevel1Page,EndingLevel2Page, EndingLevel3Page } from './Pages/Endings'
 import RulesPage from './Pages/Rules/index'
-import SecretPasswordPage from './Pages/SecretPassword/index'
+import { SecretPasswordPage, DefaultSecretPassword } from './Pages/SecretPassword/index'
 
 function App() {
   return (
@@ -38,6 +38,7 @@ function App() {
           <Route path='/Level3' element={<LevelTresPage />}/>
           <Route path='/Rules' element={<RulesPage />} />
           <Route path='/SecretPassword' element={<SecretPasswordPage />} />
+          <Route path='/DefaultSecretPassword' element={<DefaultSecretPassword />} /> 
         </Routes>
       </BrowserRouter>
     </div>
